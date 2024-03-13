@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: pink;
+}
+
+.navbar {
+  padding: 1px;
+  background-color: #140e27;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav {
+  height: 50px;
+  padding: 20px;
+  background-color: #3f3b76;
+  display: flex;
+  align-items: center;
+}
+
+.uzb {
+  border: 0;
+  background: 0;
+  color: aliceblue;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.model {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  background: #999;
+  display: none;
+  top: 400px;
+  text-align: center;
+}
+
+.model.show {
+  display: block;
+}
+
+#search {
+  width: 700px;
+  height: 40px;
+  border: none;
+  padding: 10px;
+}
+
+.done {
+  width: 80px;
+  height: 40px;
+  background-color: yellow;
+  color: black;
+  border: 0;
+}
+
+.btn-menu {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: darkblue;
+  top: 0;
+  left: -300px;
+  transition: 0.5s;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.logoo {
+  position: relative;
+  left: 250px;
+}
+
+@media (max-width: 1100px) {
+  #search {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
